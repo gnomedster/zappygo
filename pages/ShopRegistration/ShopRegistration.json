@@ -1,32 +1,171 @@
 {
-  "gitSyncId": "6816d4051dafff70e8f1a29b_7999634a-8de8-4c18-8894-77c44e28f507",
-  "unpublishedPage": {
-    "isHidden": false,
-    "layouts": [
-      {
-        "dsl": {
-          "backgroundColor": "none",
-          "bottomRow": 520,
-          "canExtend": true,
-          "containerStyle": "none",
-          "detachFromLayout": true,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "minHeight": 530,
-          "parentColumnSpace": 1,
-          "parentRowSpace": 1,
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "snapRows": 51,
-          "topRow": 0,
-          "type": "CANVAS_WIDGET",
-          "version": 92,
-          "widgetId": "0",
-          "widgetName": "MainContainer"
+  "widgetName": "ShopRegistration",
+  "type": "CANVAS_WIDGET",
+  "displayName": "Canvas",
+  "props": {
+    "rows": 80,
+    "columns": 64
+  },
+  "children": [
+    {
+      "widgetName": "Container1",
+      "type": "CONTAINER_WIDGET",
+      "displayName": "Container",
+      "props": {
+        "rows": 80,
+        "columns": 64
+      },
+      "topRow": 0,
+      "bottomRow": 80,
+      "leftColumn": 0,
+      "rightColumn": 64,
+      "children": [
+        {
+          "widgetName": "Input_ShopName",
+          "type": "INPUT_WIDGET_V2",
+          "displayName": "Shop Name",
+          "props": {
+            "label": "Shop Name",
+            "placeholderText": "Enter shop name"
+          },
+          "topRow": 1,
+          "bottomRow": 5,
+          "leftColumn": 1,
+          "rightColumn": 31
+        },
+        {
+          "widgetName": "Input_Owner",
+          "type": "INPUT_WIDGET_V2",
+          "displayName": "Owner Name",
+          "props": {
+            "label": "Owner / Proprietor Name",
+            "placeholderText": "Enter owner's name"
+          },
+          "topRow": 1,
+          "bottomRow": 5,
+          "leftColumn": 33,
+          "rightColumn": 63
+        },
+        {
+          "widgetName": "Input_Mobile",
+          "type": "INPUT_WIDGET_V2",
+          "displayName": "Mobile",
+          "props": {
+            "label": "Mobile",
+            "placeholderText": "Enter mobile number",
+            "inputType": "NUMBER"
+          },
+          "topRow": 6,
+          "bottomRow": 10,
+          "leftColumn": 1,
+          "rightColumn": 31
+        },
+        {
+          "widgetName": "Input_Address",
+          "type": "INPUT_WIDGET_V2",
+          "displayName": "Address",
+          "props": {
+            "label": "Address",
+            "placeholderText": "Enter full address",
+            "isMultiline": true
+          },
+          "topRow": 6,
+          "bottomRow": 10,
+          "leftColumn": 33,
+          "rightColumn": 63
+        },
+        {
+          "widgetName": "Input_Pincode",
+          "type": "INPUT_WIDGET_V2",
+          "displayName": "PIN Code",
+          "props": {
+            "label": "PIN Code",
+            "placeholderText": "Enter PIN"
+          },
+          "topRow": 11,
+          "bottomRow": 15,
+          "leftColumn": 1,
+          "rightColumn": 15
+        },
+        {
+          "widgetName": "Input_City",
+          "type": "INPUT_WIDGET_V2",
+          "displayName": "City",
+          "props": {
+            "label": "City",
+            "placeholderText": "Enter city"
+          },
+          "topRow": 11,
+          "bottomRow": 15,
+          "leftColumn": 17,
+          "rightColumn": 31
+        },
+        {
+          "widgetName": "Input_State",
+          "type": "INPUT_WIDGET_V2",
+          "displayName": "State",
+          "props": {
+            "label": "State",
+            "placeholderText": "Enter state"
+          },
+          "topRow": 11,
+          "bottomRow": 15,
+          "leftColumn": 33,
+          "rightColumn": 63
+        },
+        {
+          "widgetName": "Input_MapLink",
+          "type": "INPUT_WIDGET_V2",
+          "displayName": "Google Map Location",
+          "props": {
+            "label": "Google Map Location",
+            "placeholderText": "Paste map link"
+          },
+          "topRow": 16,
+          "bottomRow": 20,
+          "leftColumn": 1,
+          "rightColumn": 63
+        },
+        {
+          "widgetName": "File_Gumasta",
+          "type": "FILE_PICKER_WIDGET_V2",
+          "displayName": "Gumasta Upload",
+          "props": {
+            "label": "Upload Gumasta License",
+            "maxNumFiles": 1
+          },
+          "topRow": 21,
+          "bottomRow": 25,
+          "leftColumn": 1,
+          "rightColumn": 31
+        },
+        {
+          "widgetName": "File_ShopPhotos",
+          "type": "FILE_PICKER_WIDGET_V2",
+          "displayName": "Shop Photos Upload",
+          "props": {
+            "label": "Upload Shop Photos",
+            "maxNumFiles": 5
+          },
+          "topRow": 21,
+          "bottomRow": 25,
+          "leftColumn": 33,
+          "rightColumn": 63
+        },
+        {
+          "widgetName": "Button_Submit",
+          "type": "BUTTON_WIDGET",
+          "displayName": "Submit Button",
+          "props": {
+            "text": "Register Shop",
+            "buttonStyle": "PRIMARY"
+          },
+          "topRow": 27,
+          "bottomRow": 30,
+          "leftColumn": 24,
+          "rightColumn": 40
         }
-      }
-    ],
-    "name": "ShopRegistration",
-    "slug": "shopregistration"
-  }
+      ]
+    }
+  ]
 }
